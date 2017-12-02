@@ -1,0 +1,60 @@
+<head>
+	<title>Home</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<div id="container">
+	<div id="header">
+  		<h3 style="display: inline;"> <span class="green">Wikipedia</span></h3>
+		<form method="get" action="https://en.wikipedia.org/w/index.php">
+			<input type="text" name="search" \> 
+		</form>
+	</div>
+	<div id="links">
+		<div class="linksbox">
+			<h3><span class="green">-Personal-</span></h3>
+			<a href="https://mail.protonmail.com/login">Protonmail</a>
+			<a href="https://app.tutanota.com/#login">TutaNota</a>
+			<a href="https://mijn.ing.nl/internetbankieren/SesamLoginServlet">ING</a>
+			<a href="https://www.paypal.com/signin">Paypal</a>
+		</div>
+
+		<div class="linksbox">
+			<h3><span class="green">-Youtube-</span></span></h3>
+			<a href="https://www.youtube.com/user/RedLetterMedia/videos">Red Letter Media</a>	
+			<a href="https://www.youtube.com/user/numberphile/videos">Numberphile</a>	
+			<a href="https://www.youtube.com/user/sixtysymbols/videos">Sixty Symbols</a>
+			<a href="https://www.youtube.com/user/Computerphile/videos">Computerphile</a>	
+		</div>
+		<div class="linksbox">
+			<h3><span class="green">-Web-</span></span></h3>
+			<a href="https://boards.4chan.org/g/#cfg=%7B%22settings%22%3A%22%7B%5C%22quotePreview%5C%22%3Atrue%2C%5C%22backlinks%5C%22%3Atrue%2C%5C%22quickReply%5C%22%3Atrue%2C%5C%22threadUpdater%5C%22%3Atrue%2C%5C%22threadHiding%5C%22%3Atrue%2C%5C%22altCaptcha%5C%22%3Atrue%2C%5C%22alwaysAutoUpdate%5C%22%3Atrue%2C%5C%22topPageNav%5C%22%3Afalse%2C%5C%22threadWatcher%5C%22%3Afalse%2C%5C%22imageExpansion%5C%22%3Atrue%2C%5C%22fitToScreenExpansion%5C%22%3Afalse%2C%5C%22threadExpansion%5C%22%3Atrue%2C%5C%22alwaysDepage%5C%22%3Afalse%2C%5C%22localTime%5C%22%3Atrue%2C%5C%22stickyNav%5C%22%3Afalse%2C%5C%22keyBinds%5C%22%3Afalse%2C%5C%22inlineQuotes%5C%22%3Afalse%2C%5C%22filter%5C%22%3Afalse%2C%5C%22revealSpoilers%5C%22%3Atrue%2C%5C%22imageHover%5C%22%3Afalse%2C%5C%22threadStats%5C%22%3Atrue%2C%5C%22IDColor%5C%22%3Atrue%2C%5C%22noPictures%5C%22%3Afalse%2C%5C%22embedYouTube%5C%22%3Atrue%2C%5C%22embedSoundCloud%5C%22%3Atrue%2C%5C%22updaterSound%5C%22%3Afalse%2C%5C%22customCSS%5C%22%3Afalse%2C%5C%22autoScroll%5C%22%3Afalse%2C%5C%22hideStubs%5C%22%3Afalse%2C%5C%22compactThreads%5C%22%3Afalse%2C%5C%22centeredThreads%5C%22%3Afalse%2C%5C%22dropDownNav%5C%22%3Afalse%2C%5C%22autoHideNav%5C%22%3Afalse%2C%5C%22classicNav%5C%22%3Afalse%2C%5C%22fixedThreadWatcher%5C%22%3Afalse%2C%5C%22persistentQR%5C%22%3Afalse%2C%5C%22forceHTTPS%5C%22%3Afalse%2C%5C%22darkTheme%5C%22%3Afalse%2C%5C%22linkify%5C%22%3Atrue%2C%5C%22unmuteWebm%5C%22%3Atrue%2C%5C%22disableAll%5C%22%3Afalse%2C%5C%22customMenu%5C%22%3Atrue%2C%5C%22imageHoverBg%5C%22%3Afalse%7D%22%7D">/g/</a>
+			<a href="https://www.reddit.com/login">Reddit</a>	
+			<a href="http://www.imdb.com/">IMDB</a>	
+			<a href="https://thepiratebay.org/">TPB</a>	
+		</div>
+	<script type="text/javascript">
+
+function GetClock(){
+d = new Date();
+nhour  = d.getHours();
+nmin   = d.getMinutes();
+nsec   = d.getSeconds();
+
+if(nmin <= 9) {nmin = "0" +nmin;}
+if(nsec <= 9) {nsec = "0" +nsec;}
+
+
+document.getElementById('clockbox').innerHTML=""+nhour+":"+nmin+":"+nsec+"";
+setTimeout("GetClock()", 1000);
+}
+window.onload=GetClock;
+</script>
+<div id="clockbox" style="font:80pt Cantarell; font-weight: 100; color: rgba(255,255,255,0.35);text-align: center;"></div>
+
+</div>
+</body>
+</html>
