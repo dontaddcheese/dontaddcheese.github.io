@@ -2,28 +2,26 @@ html, body{
 	margin: 0;
 	padding: 0;
 	background-color: #0e0e0e;
-	background-image: url('https://github.com/dontaddcheese/dontaddcheese.github.io/blob/master/bg.jpg?raw=true');
+	background-image: url('bg.jpg');
 	background-repeat: no-repeat ;
 	color: #FFFFFF;
 	font-size: 13px;
 }
 
 * {
-	font-family: 'Cantarell';
+	font-family: 'Lato';
+	font-size: 20px;
 	font-weight: 300;
 }
 
 #container {
-	position: absolute;
-	padding: 0 20px 0 20px;
-	top: 25%;
-	left: 0;
-	right: 0;
-	margin-left: auto;
-	margin-right: auto;
-	width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
 	height: 400px;
-	text-align: center;
 }
 
 #header {
@@ -32,7 +30,7 @@ html, body{
     box-shadow: 1px 1px 20px 0px #000;
 	border: 1px solid rgba(0,0,0,0.3);
 	background-color: rgba(0,0,0,0.8);
-	margin: 4px;
+	margin: 50px;
 	padding: 8px;
 }
 
@@ -41,59 +39,12 @@ html, body{
 	border: 1px solid rgba(0,0,0,0.85);
 }
 
-
-#links {
-	display: -moz-box;
-	display: -webkit-box;
-	width: 100%;
-}
-
-.linksbox {
-    -webkit-box-shadow: 1px 1px 20px 0px #000;
-    -moz-box-shadow: 1px 1px 20px 0px #000;
-    box-shadow: 1px 1px 20px 0px #000;
-    -moz-box-flex: 1;	
-	-webkit-box-flex: 1;
-	margin: 4px;
-	padding: 8px 8px 8px 8px;
-	background-color: rgba(0,0,0,0.8);
-	border: 1px solid rgba(0,0,0,0.3);
-}
-
-.linksbox:hover {
-	background-color: rgba(0,0,0,0.85);
-	border: 1px solid rgba(0,0,0,0.85);
-}
-
-.linksbox a{
-	display: block;
-	color: #6673BF;
-}
-
 h3 {
 	font-size: 17px;
 	/*font-variant: small-caps;*/
 	padding-bottom: 0;
 	margin-bottom: 0;
 	margin-top: 0;
-}
-
-a{
-font-size: 15px;
-/*font-variant: small-caps;*/
-text-decoration: none;
-}
-
-a:link{
-color: rgba(255,255,255,0.3);
-}
-
-a:visited{
-color: rgba(255,255,255,0.3);
-}
-
-a:hover{
-color: rgba(255,255,255,0.45);
 }
 
 .green {
@@ -107,31 +58,50 @@ form {
 
 input 	{
 	display: inline;
-	text-align: left;
+	text-align: center;
 	margin-left: 30px;
 	border: none;
 	background: rgba(255,255,255,0.1);
-	color: #fff;
+	color: #b5b5b5;
 	width: 70%;
 	font-size: 14px;
 }
 
+input[type=text]:focus {
+      outline: 1px solid #8da277;
+}
+
+#datebox{
+
+position: absolute;
+	padding: 0 5px 0 5px;
+	top: 30%;
+	left: 27%;
+	right: 0%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 250px;
+	height: 60px;
+	background: none;
+	border: none;
+	box-shadow: none;
+    -moz-box-flex: 1;	
+	-webkit-box-flex: 1;
+}
 #clockbox{
 
 position: absolute;
-	padding: 0 20px 0 20px;
-	top: 44%;
-	left: 0;
-	right: 0;
+	padding: 0 5px 0 5px;
+	top: 15%;
+	left: 0%;
+	right: 0%;
 	margin-left: auto;
 	margin-right: auto;
-	width: 650px;
-	height: 140px;
-	background-color: rgba(0,0,0,0.8);
-	border: 1px solid rgba(0,0,0,0.3);
-	-webkit-box-shadow: 1px 1px 20px 0px #000;
-    -moz-box-shadow: 1px 1px 20px 0px #000;
-    box-shadow: 1px 1px 20px 0px #000;
+	width: 350px;
+	height: 115px;
+	background: none;
+	border: none;
+	box-shadow: none;
     -moz-box-flex: 1;	
 	-webkit-box-flex: 1;
 }
