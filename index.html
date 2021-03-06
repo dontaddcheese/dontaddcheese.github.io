@@ -13,48 +13,54 @@
 			<input type="text" name="search" \>
 		</form>
 	</div>
-	<div id="links">
-		<div class="linksbox">
-			<h3><span class="green">-Personal-</span></h3>
-			<a href="https://mail.protonmail.com/login">Protonmail</a>
-			<a href="https://app.tutanota.com/#login">TutaNota</a>
-		</div>
+	<div id="header">
+  		<h3 style="display: inline;"> <span class="green">Startpage</span></h3>
+  		<form method="get" action="https://startpage.com/sp/search/">
+            <input type="text" name="q">
+  		</form>
+	</div>
 
-		<div class="linksbox">
-			<h3><span class="green">-Entertainment-</span></span></h3>
-			<a href="https://www.netflix.com/login">Netflix</a>
-			<a href="https://www.imdb.com/">IMDb</a>
-			<a href="https://www.youtube.com/user/numberphile/videos">Numberphile</a>
-			<a href="https://www.youtube.com/user/Computerphile/videos">Computerphile</a>
-		</div>
-		<div class="linksbox">
-			<h3><span class="green">-News-</span></span></h3>
-			<a href="https://news.ycombinator.com/">HN</a>
-			<a href="https://apnews.com/">AP</a>
-		</div>
-	<script type="text/javascript">
-
+	</div>
+</div>
+<script type="text/javascript">
 function GetClock(){
+const monthNames = [
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+    'Aug',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Dec',
+  ];
 d = new Date();
 nhour  = d.getHours();
 nmin   = d.getMinutes();
 nsec   = d.getSeconds();
+nmonth = monthNames[d.getMonth()];
+nday   = d.getDate();
 
 <!--Daylight saving time correction-->
-nhour = nhour + 0;
+nhour = nhour + 1;
 
 <!--Rounding off minutes and seconds-->
 if(nmin <= 9) {nmin = "0" +nmin;}
 if(nsec <= 9) {nsec = "0" +nsec;}
 
 
-document.getElementById('clockbox').innerHTML=""+nhour+":"+nmin+":"+nsec+"";
+document.getElementById('clockbox').innerHTML=""+nhour+":"+nmin+"";
+document.getElementById('datebox').innerHTML=""+nday+" "+nmonth+"";
 setTimeout("GetClock()", 1000);
 }
 window.onload=GetClock;
 </script>
-<div id="clockbox" style="font:80pt Cantarell; font-weight: 100; color: rgba(255,255,255,0.35);text-align: center;"></div>
+<div id="datebox" style="font-size:40px; font-family:'Lato'; font-weight: 300; color: #1a1a1a;text-align: center;"></div>
+<div id="clockbox" style="font-size:140px; font-family:'Lato'; font-weight: 800; color: #1a1a1a;text-align: center;"></div>
 
-</div>
 </body>
 </html>
