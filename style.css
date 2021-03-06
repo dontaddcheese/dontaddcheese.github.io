@@ -71,6 +71,7 @@ input[type=text]:focus {
       outline: 1px solid #8da277;
 }
 #datebox{
+	display: block;
     	position: absolute;
 	padding: 0 5px 0 5px;
 	top: 30%;
@@ -90,6 +91,7 @@ input[type=text]:focus {
     	text-align: center;
 }
 #clockbox{
+	display: block;
     	position: absolute;
 	padding: 0 5px 0 5px;
 	top: 15%;
