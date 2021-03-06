@@ -21,5 +21,44 @@
 	</div>
 	</div>
 </div>
+<script type="text/javascript">
+function GetClock(){
+const monthNames = [
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+    'Aug',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Dec',
+  ];
+d = new Date();
+nhour  = d.getHours();
+nmin   = d.getMinutes();
+nsec   = d.getSeconds();
+nmonth = monthNames[d.getMonth()];
+nday   = d.getDate();
+
+<!--Daylight saving time correction-->
+nhour = nhour + 1;
+
+<!--Rounding off minutes and seconds-->
+if(nmin <= 9) {nmin = "0" +nmin;}
+if(nsec <= 9) {nsec = "0" +nsec;}
+
+
+document.getElementById('clockbox').innerHTML=""+nhour+":"+nmin+"";
+document.getElementById('datebox').innerHTML=""+nday+" "+nmonth+"";
+setTimeout("GetClock()", 1000);
+}
+window.onload=GetClock;
+</script>
+<div id="datebox"></div>
+<div id="clockbox"></div>
 </body>
 </html>
