@@ -70,3 +70,45 @@ input 	{
 input[type=text]:focus {
       outline: 1px solid #8da277;
 }
+#datebox{
+    	position: absolute;
+	padding: 0 5px 0 5px;
+	top: 30%;
+	left: 27%;
+	right: 0%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 250px;
+	height: 60px;
+	background: none;
+	border: none;
+	box-shadow: none;
+    	-moz-box-flex: 1;	
+	-webkit-box-flex: 1;
+    	font-size:40px; 
+    	font-family:'Lato'; 
+    	font-weight: 300; 
+    	color: #1a1a1a;
+    	text-align: center;
+}
+#clockbox{
+    	position: absolute;
+	padding: 0 5px 0 5px;
+	top: 15%;
+	left: 0%;
+	right: 0%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 350px;
+	height: 115px;
+	background: none;
+	border: none;
+	box-shadow: none;
+    	-moz-box-flex: 1;	
+	-webkit-box-flex: 1;
+    	font-size:140px; 
+    	font-family:'Lato'; 
+    	font-weight: 800; 
+    	color: #1a1a1a;
+    	text-align: center;
+}
