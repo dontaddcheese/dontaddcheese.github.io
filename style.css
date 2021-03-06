@@ -83,8 +83,6 @@ input[type=text]:focus {
 	background: none;
 	border: none;
 	box-shadow: none;
-    	-moz-box-flex: 1;	
-	-webkit-box-flex: 1;
     	font-size:40px; 
     	font-family:'Lato'; 
     	font-weight: 300; 
@@ -104,8 +102,6 @@ input[type=text]:focus {
 	background: none;
 	border: none;
 	box-shadow: none;
-    	-moz-box-flex: 1;	
-	-webkit-box-flex: 1;
     	font-size:140px; 
     	font-family:'Lato'; 
     	font-weight: 800; 
