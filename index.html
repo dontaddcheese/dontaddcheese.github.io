@@ -52,8 +52,8 @@ if(nmin <= 9) {nmin = "0" +nmin;}
 if(nsec <= 9) {nsec = "0" +nsec;}
 
 
-document.getElementById('clockbox').innerHTML=""+nhour+":"+nmin+"";
-document.getElementById('datebox').innerHTML=""+nday+" "+nmonth+"";
+document.getElementById('datebox').innerHTML=""+nhour+":"+nmin+"";
+document.getElementById('clockbox').innerHTML=""+nday+" "+nmonth+"";
 setTimeout("GetClock()", 1000);
 }
 window.onload=GetClock;
