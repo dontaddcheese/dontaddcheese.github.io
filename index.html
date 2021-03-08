@@ -24,18 +24,27 @@
 <script type="text/javascript">
 function GetClock(){
 const monthNames = [
-    'Jan',
-    'Feb',
-    'Mar',
-    'Apr',
+    'Januari',
+    'Februari',
+    'March',
+    'April',
     'May',
-    'Jun',
-    'Jul',
-    'Aug',
-    'Sep',
-    'Oct',
-    'Nov',
-    'Dec',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+  ];
+const weekDays = [
+    'Sunday',
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday',
   ];
 d = new Date();
 nhour  = d.getHours();
@@ -43,6 +52,8 @@ nmin   = d.getMinutes();
 nsec   = d.getSeconds();
 nmonth = monthNames[d.getMonth()];
 nday   = d.getDate();
+nfday  = weekDays[d.getDay()];
+
 
 <!--Daylight saving time correction-->
 nhour = nhour + 0;
@@ -53,12 +64,12 @@ if(nsec <= 9) {nsec = "0" +nsec;}
 
 
 document.getElementById('clockbox').innerHTML=""+nhour+":"+nmin+"";
-document.getElementById('datebox').innerHTML=""+nday+" "+nmonth+"";
+document.getElementById('datebox').innerHTML=""+nfday+", "+nday+" "+nmonth+"";
 setTimeout("GetClock()", 1000);
 }
 window.onload=GetClock;
 </script>
-<div id="datebox" style="font-size:40px; font-family:'Lato'; font-weight: 300; color: #1a1a1a;text-align: center;"></div>
-<div id="clockbox" style="font-size:140px; font-family:'Lato'; font-weight: 800; color: #1a1a1a;text-align: center;"></div>
+<div id="datebox" style="font-size:40px; font-family:'Lato'; font-weight: 300; color: #121212;text-align: center;"></div>
+<div id="clockbox" style="font-size:140px; font-family:'Lato'; font-weight: 800; color: #121212;text-align: center;"></div>
 </body>
 </html>
