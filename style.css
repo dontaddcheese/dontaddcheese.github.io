@@ -84,11 +84,6 @@ input[type=text]:focus {
 	background: none;
 	border: none;
 	box-shadow: none;
-    	font-size:40px; 
-    	font-family:'Lato'; 
-    	font-weight: 300; 
-    	color: #1a1a1a;
-    	text-align: center;
 }
 #clockbox{
 	display: block;
@@ -104,9 +99,4 @@ input[type=text]:focus {
 	background: none;
 	border: none;
 	box-shadow: none;
-    	font-size:140px; 
-    	font-family:'Lato'; 
-    	font-weight: 800; 
-    	color: #1a1a1a;
-    	text-align: center;
 }
