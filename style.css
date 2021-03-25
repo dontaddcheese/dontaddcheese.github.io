@@ -66,7 +66,7 @@ input 	{
 }
 
 input[type=text]:focus {
-      outline: 1px solid #8da277;
+      outline: 1px solid #a1c2af;
 }
 #datebox{
 	display: block;
