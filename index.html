@@ -3,10 +3,14 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-
 <div id="container">
+	<div id="header">
+  		<h3 style="display: inline;"> <span class="green">Startpage</span></h3>
+  		<form method="get" action="https://startpage.com/sp/search/">
+            <input type="text" name="q">
+  		</form>
+	</div>
 	<div id="header">
   		<h3 style="display: inline;"> <span class="green">Wikipedia</span></h3>
 		<form method="get" action="https://en.wikipedia.org/w/index.php">
@@ -14,11 +18,16 @@
 		</form>
 	</div>
 	<div id="header">
-  		<h3 style="display: inline;"> <span class="green">Startpage</span></h3>
-  		<form method="get" action="https://startpage.com/sp/search/">
-            <input type="text" name="q">
-  		</form>
+  		<h3 style="display: inline;"> <span class="green">Wolfram Alpha</span></h3>
+		<form method="get" action="https://www.wolframalpha.com/input/">
+			<input type="text" name="i">
+		</form>
 	</div>
+	<div id="header">
+  		<h3 style="display: inline;"> <span class="green">Shodan</span></h3>
+		<form method="get" action="https://www.shodan.io/search">
+			<input type="text" name="query">
+		</form>
 	</div>
 </div>
 <script type="text/javascript">
@@ -72,4 +81,4 @@ window.onload=GetClock;
 <div id="datebox" style="font-size:40px; font-family:'Lato'; font-weight: 300; color: #121212;text-align: center;"></div>
 <div id="clockbox" style="font-size:140px; font-family:'Lato'; font-weight: 800; color: #121212;text-align: center;"></div>
 </body>
-</html>
+</html> 
