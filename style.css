@@ -3,15 +3,41 @@ html, body{
 	padding: 0;
 	color: #FFFFFF;
 	font-size: 13px;
-    background: url(gbg.jpeg) no-repeat bottom center fixed; 
+    background: url(dcg2.png) no-repeat bottom center fixed; 
     background-size: contain;
-    background-color: #a1c2af;
+    background-color: #8da277;
     
 }
+
 * {
 	font-family: 'Lato';
 	font-size: 20px;
 	font-weight: 300;
+}
+
+.flex-container {
+  display: flex;
+  height: 50px;
+  background-color: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container > a {
+  background-color: none;
+  border: none;
+  margin: 40px;
+  padding: 10px;
+}
+
+img{
+  width: 32px;
+  height: 32px;
+  border: none;
+}
+
+:focus{
+    outline:0;
 }
 
 #container {
@@ -66,33 +92,45 @@ input 	{
 }
 
 input[type=text]:focus {
-      outline: 1px solid #a1c2af;
+      outline: 1px solid #8da277;
 }
+
 #datebox{
-	display: block;
+    display: block;
     position: absolute;
-	padding: 0 5px 0 5px;
-	top: 23%;
-	left: 0%;
-	right: 0%;
-	margin-left: auto;
-	margin-right: auto;
-	width: 450px;
-	background: none;
-	border: none;
-	box-shadow: none;
+    font-size:40px; 
+    font-family:'Lato'; 
+    font-weight: 300; 
+    color: #121212;
+    text-align: center;
+    padding: 0 5px 0 5px;
+    top: 23%;
+    left: 0%;
+    right: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    background: none;
+    border: none;
+    box-shadow: none;
 }
+
 #clockbox{
-	display: block;
+    display: block;
     position: absolute;
-	padding: 0 5px 0 5px;
-	top: 10%;
-	left: 0%;
-	right: 0%;
-	margin-left: auto;
-	margin-right: auto;
-	width: 400px;
-	background: none;
-	border: none;
-	box-shadow: none;
+    font-size:140px; 
+    font-family:'Lato'; 
+    font-weight: 800; 
+    color: #121212;
+    text-align: center;
+    padding: 0 5px 0 5px;
+    top: 10%;
+    left: 0%;
+    right: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    background: none;
+    border: none;
+    box-shadow: none;
 } 
