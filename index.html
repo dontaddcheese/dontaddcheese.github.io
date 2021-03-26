@@ -2,10 +2,28 @@
 	<title>Home</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="style.css" />
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 </head>
 <body>
+<div class="flex-container">
+    <a href="https://www.gitlab.com">
+        <img src="gitlab.png">
+    </a>
+    <a href="https://www.openstreetmap.org">
+        <img src="maps.png">
+    </a>
+    <a href="https://news.ycombinator.com/">
+        <img src="hackernews.png">
+    </a>
+    <a href="https://www.netflix.com">
+        <img src="netflix.png">
+    </a>
+    <a href="https://www.youtube.com/user/Computerphile/videos">
+        <img src="youtube.png">
+    </a>
+    <a href="https://www.teddit.net/r/unixporn">
+        <img src="reddit.png">
+    </a>
+</div>
 <div id="container">
 	<div id="header">
   		<h3 style="display: inline;"> <span class="green">Startpage</span></h3>
@@ -80,7 +98,7 @@ setTimeout("GetClock()", 1000);
 }
 window.onload=GetClock;
 </script>
-<div id="datebox" style="font-size:40px; font-family:'Lato'; font-weight: 300; color: #121212;text-align: center;"></div>
-<div id="clockbox" style="font-size:140px; font-family:'Lato'; font-weight: 800; color: #121212;text-align: center;"></div>
+<div id="datebox"></div>
+<div id="clockbox"></div>
 </body>
 </html> 
