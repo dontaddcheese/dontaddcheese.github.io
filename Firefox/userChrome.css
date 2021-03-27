@@ -1,0 +1,104 @@
+/*Hide the tab toolbar*/
+#TabsToolbar {
+    visibility: collapse;
+}
+/*Place hamburger menu on the left and set its background*/
+#PanelUI-button{ 
+    -moz-box-ordinal-group: 0;
+    background-color: #24272a !important;
+}
+/*Overflow button background*/
+#nav-bar-overflow-button { 
+    background-color: #24272a !important; 
+}
+#nav-bar-customization-target{ 
+    -moz-box-ordinal-group: 2;
+    background-color: #24272a !important;
+}
+/*Get rid of annoying border*/
+#navigator-toolbox {
+    border:0 !important
+}
+#customization-panelWrapper > .panel-arrowbox > .panel-arrow{ 
+    margin-inline-end: initial !important;
+}
+/*Reduce bookmarks toolbar width*/
+#PlacesToolbarItems { 
+    max-width: 250px !important; 
+}
+/*Show the window manager buttons*/
+#TabsToolbar .titlebar-buttonbox-container {
+    visibility: visible !important;
+    position: absolute;
+    display: block;
+    top: 6px;
+    right: 0;
+}
+/*Remove some more things*/
+#tracking-protection-icon-container {
+	display: none !important;
+	border: none !important;
+}
+#page-action-buttons,
+#tracking-protection-icon-container {
+	display: none !important;
+	border: none !important;
+}
+#identity-box {
+	visibility: collapse !important;
+}
+/*Set width to properly center the urlbox, this needs a better solution*/
+#urlbar-container { 
+   max-width: 937px !important; 
+}
+#search-container {
+    max-width: 600px !important;
+}
+/*Set urlbar color and remove borders and shadows*/
+#urlbar-background{
+	background: none !important;
+    background-color: #24272a !important;
+	border: none !important;
+    box-shadow: none !important;
+}
+/*Fix the search bar*/
+#urlbar[breakout][breakout-extend] {
+  --urlbar-height: 24px !important;
+  --urlbar-toolbar-height: 30px !important;
+  width: 100% !important;
+  top: calc((var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2) !important;
+  left: 0 !important;
+}
+#urlbar[breakout][breakout-extend] > #urlbar-input-container {
+  height: var(--urlbar-height) !important;
+  width: 100% !important;
+  padding-block: unset !important;
+  padding-inline: unset !important;
+  transition: none !important;
+}
+/*Center search text*/
+#urlbar-input {
+	text-align: center !important;
+}
+#urlbar-input:focus {
+	text-align: center !important;
+}
+/*Remove Tree Style Tabs header*/
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar-header {
+  display: none;
+}
+/*Remove Tree Style Tabs splitter/resizer/border thing*/
+.sidebar-splitter { 
+    display: none; 
+}
+/*Hide some things from right click menu*/
+#context_sendTabToDevice_separator,
+#context_sendTabToDevice,
+#context-sep-sendpagetodevice,
+#context-sendpagetodevice,
+#context-savelinktopocket,
+#context-sep-sendlinktodevice,
+#context-sendlinktodevice,
+#context-sendimage,
+#context-setDesktopBackground
+{display: none !important;}
