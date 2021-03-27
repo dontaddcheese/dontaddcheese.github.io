@@ -1,0 +1,122 @@
+/* Show title of unread tabs with red and italic font */
+/*
+:root.sidebar tab-item.unread .label-content {
+  color: red !important;
+  font-style: italic !important;
+}
+*/
+
+/* Add private browsing indicator per tab */
+/*
+:root.sidebar tab-item.private-browsing tab-label:before {
+  content: "🕶";
+}
+*/
+:root {
+  --colorA: #96ac7e;
+  --colorB: #565e4e;
+  --colorC: #b4b4b4;
+  --colorD: #a1a89a;
+  --colorE: #24272a;
+  --colorF: #281f1a;
+  --colorG: #96ac7e;
+  --tab-highlighter: #96ac7e;
+  background-color: var(--colorF);
+}
+
+:root.sidebar #background {
+  background-color: #24272a;
+}
+
+:root.simulate-svg-context-fill .closebox::after {
+  background: white;
+}
+
+:root.simulate-svg-context-fill .tab.active .closebox::after {
+  background: black;
+}
+
+:root.simulate-svg-context-fill .tab:hover .closebox::after {
+  background: black;
+}
+
+:root.simulate-svg-context-fill .tab.active .sound-button::after {
+  background: black;
+}
+
+:root.simulate-svg-context-fill .tab:hover .sound-button::after {
+  background: black;
+}
+
+.tab {
+  background-color: var(--colorE);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid var(--colorF);
+}
+
+.tab .label {
+  color: white;
+}
+
+.tab.active .label {
+  color: black;
+}
+
+.tab .counter {
+  color: var(--colorD);
+}
+
+.tab.active .twisty
+{
+  color: var(--colorG);
+}
+
+.tab.active {
+  color: black;
+  background-color: var(--colorA);
+}
+
+.tab.active:hover {
+  background-color: var(--colorA);
+}
+
+.tab:hover .label {
+  color: black;
+}
+
+.tab:hover, .tab:not(.active):hover {
+  color: black;
+  background-color: var(--colorB);
+}
+
+.tab.unread .label {
+  font-style: italic;
+}
+
+.tab.discarded {
+  color: var(--colorC);
+  background-color: black;
+  border-top: none;
+  border-bottom: 1px solid black;
+}
+
+.newtab-button-box {
+  color: #000000;
+}
+
+/* New tab button */
+:root.simulate-svg-context-fill .newtab-button {
+    background-color: #24272a;
+    border: none;
+  	box-shadow: none;
+    line-height: 22px;
+}
+
+/* New tab plus sign */
+:root.simulate-svg-context-fill .newtab-button::before {
+    background-color: #b4b4b4;
+    vertical-align: middle;
+    margin-top: -3px;
+}
