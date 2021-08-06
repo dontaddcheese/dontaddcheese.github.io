@@ -1,104 +1,13 @@
+<!DOCTYPE html>
+<html>
 <head>
 	<title>Home</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<div class="flex-container">
-    <a href="https://www.gitlab.com">
-        <img src="gitlab.png">
-    </a>
-    <a href="https://www.openstreetmap.org">
-        <img src="maps.png">
-    </a>
-    <a href="https://news.ycombinator.com/">
-        <img src="hackernews.png">
-    </a>
-    <a href="https://www.netflix.com">
-        <img src="netflix.png">
-    </a>
-    <a href="https://www.youtube.com/user/Computerphile/videos">
-        <img src="youtube.png">
-    </a>
-    <a href="https://www.teddit.net/r/unixporn">
-        <img src="reddit.png">
-    </a>
-</div>
-<div id="container">
-	<div id="header">
-  		<h3 style="display: inline;"> <span class="green">Startpage</span></h3>
-  		<form method="get" action="https://startpage.com/sp/search/">
-            <input type="text" name="q">
-  		</form>
-	</div>
-	<div id="header">
-  		<h3 style="display: inline;"> <span class="green">Wikipedia</span></h3>
-		<form method="get" action="https://en.wikipedia.org/w/index.php">
-			<input type="text" name="search" \>
-		</form>
-	</div>
-	<div id="header">
-  		<h3 style="display: inline;"> <span class="green">Wolfram Alpha</span></h3>
-		<form method="get" action="https://www.wolframalpha.com/input/">
-			<input type="text" name="i">
-		</form>
-	</div>
-	<div id="header">
-  		<h3 style="display: inline;"> <span class="green">Shodan</span></h3>
-		<form method="get" action="https://www.shodan.io/search">
-			<input type="text" name="query">
-		</form>
-	</div>
-</div>
-<script type="text/javascript">
-function GetClock(){
-const monthNames = [
-    'Januari',
-    'Februari',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December',
-  ];
-const weekDays = [
-    'Sunday',
-    'Monday',
-    'Tuesday',
-    'Wednesday',
-    'Thursday',
-    'Friday',
-    'Saturday',
-  ];
-d = new Date();
-nhour  = d.getHours();
-nmin   = d.getMinutes();
-nsec   = d.getSeconds();
-nmonth = monthNames[d.getMonth()];
-nday   = d.getDate();
-nfday  = weekDays[d.getDay()];
-
-
-<!--Daylight saving time correction-->
-nhour = nhour + 0;
-
-<!--Rounding off minutes and seconds-->
-if(nmin <= 9) {nmin = "0" +nmin;}
-if(nsec <= 9) {nsec = "0" +nsec;}
-
-
-document.getElementById('clockbox').innerHTML=""+nhour+":"+nmin+"";
-document.getElementById('datebox').innerHTML=""+nfday+", "+nday+" "+nmonth+"";
-setTimeout("GetClock()", 1000);
-}
-window.onload=GetClock;
-</script>
-<div id="datebox"></div>
-<div id="clockbox"></div>
-</body>
-</html> 
+    <div class="img">
+        <img src="wb.png" alt="WB"> 
+    </div>
+ </body>
+</html>
